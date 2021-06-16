@@ -34,7 +34,7 @@ RUN git clone https://github.com/eulerto/wal2json -b master --single-branch \
     && rm -rf wal2json
 
 
-FROM postgres:11
+FROM postgres:10
 
 LABEL maintainer="Debezium Community"
 
