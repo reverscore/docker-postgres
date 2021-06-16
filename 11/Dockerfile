@@ -1,4 +1,4 @@
-FROM postgres:10 AS build
+FROM postgres:11 AS build
 
 ARG USE_POSTGIS=true
 ENV PLUGIN_VERSION=v1.3.0.Final
@@ -34,7 +34,7 @@ RUN git clone https://github.com/eulerto/wal2json -b master --single-branch \
     && rm -rf wal2json
 
 
-FROM postgres:10
+FROM postgres:11
 
 LABEL maintainer="Debezium Community"
 
