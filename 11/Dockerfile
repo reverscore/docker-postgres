@@ -38,6 +38,7 @@ FROM postgres:11-bullseye
 
 LABEL maintainer="Debezium Community"
 
+# Failing because we need version 3, is it safe to use? I don't know
 ENV POSTGIS_VERSION=2.5
 
 RUN apt-get update \
