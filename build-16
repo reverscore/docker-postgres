@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build -t rever/postgres:16 -f 16/Dockerfile 16
+docker tag rever/postgres:16
